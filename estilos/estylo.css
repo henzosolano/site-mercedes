@@ -1,0 +1,217 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --cor0:#9c9c9c;
+    --cor1:#8b8b8b;
+    --cor2:#565555;  
+    --cor3:#2e2e2e;
+    --cor4:#1d1d1d; 
+
+    --fonte-texto: Verdana, Helvetica, Arial, sans-serif;
+    --fonte-hs: "Cormorant", serif;  
+    --fonte-header: "Unna", 'Cormorant', serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    margin: 0px;
+    background-color: var(--cor0);
+}
+
+a.externo::after {
+    content: '\00A0\1F517';
+}
+
+header{
+    background-image: linear-gradient(180deg, var(--cor2), var(--cor4));
+    min-height: 150px;
+    padding-top: 20px;
+}
+h1{
+    color: var(--cor1);
+    text-align: center;
+    margin: 20px;
+    font: normal normal 2.1em var(--fonte-header);
+
+}
+
+header p{
+    text-align: center;
+    margin: 10px;
+    color: var(--cor1);
+    background-color: var(--cor4);
+    padding: 5px;
+    border-radius: 5px;
+    width: 300px;
+    margin: auto;
+    font: normal light 1em var(--fonte-hs);
+}
+
+nav{
+    background-color: var(--cor4);
+    min-height: 40px;
+    box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.262);
+}
+nav > a{
+    font: italic bolder 1.1em var(--fonte-hs);
+    padding: 4px;
+    margin: 5.5px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    text-shadow: 1px 1px 3px #00000087;
+    color: var(--cor1);
+    background-color: var(--cor2);
+    border-radius: 0px 3px;
+    box-shadow: 2px 2px 2px #0000004a;
+    transition-duration: 0.7s;
+    
+}
+nav > a:hover{
+    background-color: #dddddd;
+}
+
+
+main{
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.397);
+    background-color: white; 
+    margin: auto;
+    max-width: 1000px;
+    min-width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+article{
+    padding: 9px;
+    margin: auto;
+    font-family: var(--fonte-texto);
+}
+
+h2{
+    background-image: linear-gradient(90deg, var(--cor2), transparent);
+    font: normal bold 1.5em var(--fonte-hs);
+    padding: 6px;
+    margin: 15px 0px;
+    
+}
+
+main p{
+    text-align: justify;
+    text-indent: 25px;
+    margin: 15px 0px;
+    line-height: 1.4em;
+    font-size: 0.9em;
+}   
+
+main strong{
+    color: var(--cor3);
+    background-color: var(--cor1);
+    padding: 3px 4px;
+} 
+
+main a{
+    text-decoration: underline;
+    color: var(--cor2);
+    
+}
+
+main a:hover{
+    background-color: var(--cor4);
+    color: var(--cor1);
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+
+main img{
+    max-width: 100%;
+    display: block;
+    margin: 15px auto 15px auto;  
+}
+
+main .logo{
+    max-width: 50%;
+    display: block;
+    margin: auto;
+    padding: 6px;
+}
+
+main .primeiro-carro{
+    max-width: 350px;
+}
+
+
+.video{
+    background-color: black;
+    margin: 15px;
+    padding: 15%;
+    padding-bottom: 40%;
+    position: relative;
+}
+
+.video > iframe{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+aside{
+    background-color: var(--cor3);
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+aside h3{
+    padding: 8px;
+    margin: -10px -10px 0px -10px;
+    background-color: var(--cor2);
+    color: var(--cor4);
+    font: normal bolder 2em var(--fonte-hs);
+    border-radius: 5px 5px 0px 0px;
+}
+
+aside > p {
+    padding: 6px;
+    margin: 15px 0px;
+    font: normal normal 1.1em var(--fonte-texto);
+    color: var(--cor0);
+}
+
+aside ul {
+    list-style-type:'\2705\00A0\00A0';
+    color: white;
+    list-style-position: inside;
+    font-size: 0.8em;
+    columns: 2;
+    
+}
+
+aside  p  a {
+    text-decoration: none;
+    color: var(--cor0);
+}
+
+aside p a:hover{
+    color: var(--cor2);
+}
+
+footer{
+    background-color: var(--cor2);
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font: normal bold 1.05em var(--fonte-hs);
+}
+
+footer p{
+    padding: 4px;
+}
